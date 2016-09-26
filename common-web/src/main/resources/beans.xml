@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd ">
+
+       <!--<import resource="mybatis.xml"></import>-->
+
+       <!--<mvc:annotation-driven/>-->
+
+       <!--<context:component-scan base-package="com.miao.user"/>-->
+
+       <!--<context:annotation-config/>-->
+       <aop:aspectj-autoproxy/>
+       <aop:aspectj-autoproxy proxy-target-class="true"/>
+       <bean id="controllerAspect" class="com.miao.aop.ControllerAspect"/>
+       <aop:config>
+              <aop:aspect id="controllerAspect" ref="controllerAspect">
+                     <aop:pointcut id="controllerAspectService" expression="execution(* com..*Controller.*(..))" />
+                     <aop:before pointcut-ref="controllerAspectService" method="doBefore"/>
+                     <aop:after pointcut-ref="controllerAspectService" method="doAfter"/>
+                     <aop:around pointcut-ref="controllerAspectService" method="doAround"/>
+              </aop:aspect>
+       </aop:config>
+
+
+       <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+              <property name="messageConverters">
+                     <list>
+                            <ref bean="mappingJacksonHttpMessageConverter"/>
+                            <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
+                            <bean class="org.springframework.http.converter.BufferedImageHttpMessageConverter"/>
+                            <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
+                            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+                            <bean class="org.springframework.http.converter.ResourceHttpMessageConverter"/>
+                     </list>
+              </property>
+       </bean>
+
+       <bean id="mappingJacksonHttpMessageConverter"
+             class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+              <property name="supportedMediaTypes">
+                     <value>application/json</value>
+              </property>
+              <property name="objectMapper">
+                     <bean class="com.merle.plat.core.json.MObjectMapper"/>
+              </property>
+       </bean>
+
+
+       <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+       <!--view -->
+       <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+              <property name="order" value="0"/>
+              <property name="useNotAcceptableStatusCode" value="true"/>
+              <property name="contentNegotiationManager">
+                     <bean class="org.springframework.web.accept.ContentNegotiationManager">
+                            <constructor-arg>
+                                   <bean class="org.springframework.web.accept.PathExtensionContentNegotiationStrategy">
+                                          <constructor-arg>
+                                                 <map>
+                                                        <entry key="html" value="text/html"/>
+                                                        <entry key="jsp" value="text/html"/>
+                                                        <entry key="json" value="application/json"/>
+                                                        <entry key="jsonp" value="application/javascript"/>
+                                                        <entry key="xml" value="application/xml"/>
+                                                 </map>
+                                          </constructor-arg>
+                                   </bean>
+                            </constructor-arg>
+                     </bean>
+              </property>
+              <property name="defaultViews">
+                     <list>
+                            <bean class="com.merle.plat.core.json.MappingJsonView"></bean>
+                     </list>
+              </property>
+              <property name="viewResolvers">
+                     <list>
+                            <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+                                   <property name="contentType" value="text/html"/>
+                                   <property name="order" value="100"/>
+                                   <property name="prefix" value="/WEB-INF/jsp/"/>
+                                   <property name="suffix" value=".jsp"/>
+                            </bean>
+                            <bean id="viewResolver" class="com.merle.plat.core.spring.BaseNameViewResolver">
+                                   <property name="baseNamePicker">
+                                          <bean class="com.merle.plat.core.spring.BaseNamePickerImpl">
+                                                 <property name="configLocations" value="classpath*:**/config/*_views*"/>
+                                          </bean>
+                                   </property>
+                            </bean>
+                     </list>
+              </property>
+       </bean>
+
+       <bean id="exceptionResolver" class="com.merle.exception.MyExceptionResolver">
+       </bean>
+
+       <!-- 整合quartz-->
+       <!--<bean id="taskJob" class="com.miao.quartz.task.DataConversionTask"/>-->
+       <!--<bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+              <!--<property name="group" value="job_work"/>-->
+              <!--<property name="name" value="job_work_name"/>-->
+              <!--&lt;!&ndash;false表示等上一个任务执行完后再开启新的任务&ndash;&gt;-->
+              <!--<property name="concurrent" value="false"/>-->
+              <!--<property name="targetObject">-->
+                     <!--<ref bean="taskJob"/>-->
+              <!--</property>-->
+              <!--<property name="targetMethod">-->
+                     <!--<value>run</value>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <!--&lt;!&ndash;  调度触发器 &ndash;&gt;-->
+       <!--<bean id="myTrigger"-->
+             <!--class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">-->
+              <!--<property name="name" value="work_default_name"/>-->
+              <!--<property name="group" value="work_default"/>-->
+              <!--<property name="jobDetail">-->
+                     <!--<ref bean="jobDetail" />-->
+              <!--</property>-->
+              <!--<property name="cronExpression">-->
+                     <!--<value>0/5 * * * * ?</value>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <!--&lt;!&ndash; 调度工厂 &ndash;&gt;-->
+       <!--<bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">-->
+              <!--<property name="triggers">-->
+                     <!--<list>-->
+                            <!--<ref bean="myTrigger"/>-->
+                     <!--</list>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <!-- 动态整合quartz-->
+       <!--<bean id="myScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">-->
+              <!--<property name="configLocation" value="classpath:quartz.properties" />-->
+              <!--<property name="dataSource" ref="dataSource" />-->
+              <!--<property name="overwriteExistingJobs" value="true" />-->
+              <!--<property name="autoStartup" value="true" />-->
+       <!--</bean>-->
+
+       <bean id="httpSolrServer" class="org.apache.solr.client.solrj.impl.HttpSolrClient" autowire="byName" name="httpSolrClient">
+              <constructor-arg index="0" value="http://localhost:8080/myFirstCore"/>
+
+              <property name="soTimeout" value="2000"/>
+              <property name="connectionTimeout" value="2000"/>
+              <property name="defaultMaxConnectionsPerHost" value="2000"/>
+              <property name="maxTotalConnections" value="2000"/>
+              <property name="followRedirects" value="false"/>
+              <property name="allowCompression" value="true"/>
+              <property name="maxRetries" value="1"/>
+       </bean>
+
+
+</beans>

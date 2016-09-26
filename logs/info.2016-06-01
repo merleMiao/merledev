@@ -1,0 +1,177 @@
+13:00:17.058 [main] INFO  user.UserTest[33] - info
+13:00:17.271 [main] INFO  user.UserTest[37] - 127.0.0.1
+13:08:48.131 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	"xxxxx"
+13:08:48.148 [pool-4-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	"xxxxx"
+13:08:48.153 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	"xxxxx"
+13:08:48.157 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	"xxxxx"
+13:11:08.628 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"NvuMPuRfsyoTwXi2kTwewg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"8tXG8f9MuEuk1JyiSjSYqN","name":"小红","sex":0,"is_delete":0}]
+13:11:08.654 [pool-4-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"NvuMPuRfsyoTwXi2kTwewg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"8tXG8f9MuEuk1JyiSjSYqN","name":"小红","sex":0,"is_delete":0}]
+13:11:08.655 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"NvuMPuRfsyoTwXi2kTwewg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"8tXG8f9MuEuk1JyiSjSYqN","name":"小红","sex":0,"is_delete":0}]
+13:11:08.665 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"NvuMPuRfsyoTwXi2kTwewg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"8tXG8f9MuEuk1JyiSjSYqN","name":"小红","sex":0,"is_delete":0}]
+13:11:11.935 [http-bio-8089-exec-3] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"FthEZ7TAmfvhFebE5FBg6T","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"9C2L73cRL9GsHXmbw6HWak","name":"小红","sex":0,"is_delete":0}]
+13:11:11.948 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"FthEZ7TAmfvhFebE5FBg6T","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"9C2L73cRL9GsHXmbw6HWak","name":"小红","sex":0,"is_delete":0}]
+13:11:11.951 [pool-7-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"FthEZ7TAmfvhFebE5FBg6T","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"9C2L73cRL9GsHXmbw6HWak","name":"小红","sex":0,"is_delete":0}]
+13:11:11.955 [http-bio-8089-exec-3] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"FthEZ7TAmfvhFebE5FBg6T","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"9C2L73cRL9GsHXmbw6HWak","name":"小红","sex":0,"is_delete":0}]
+13:11:12.980 [http-bio-8089-exec-4] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"CrvSmKeoL7ABV1h5KeYMk7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"JS4c93ufTdwGnEGpvLEHxP","name":"小红","sex":0,"is_delete":0}]
+13:11:12.992 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"CrvSmKeoL7ABV1h5KeYMk7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"JS4c93ufTdwGnEGpvLEHxP","name":"小红","sex":0,"is_delete":0}]
+13:11:12.995 [pool-10-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"CrvSmKeoL7ABV1h5KeYMk7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"JS4c93ufTdwGnEGpvLEHxP","name":"小红","sex":0,"is_delete":0}]
+13:11:13.000 [http-bio-8089-exec-4] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"CrvSmKeoL7ABV1h5KeYMk7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"JS4c93ufTdwGnEGpvLEHxP","name":"小红","sex":0,"is_delete":0}]
+13:11:13.617 [http-bio-8089-exec-5] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"GuV1MjHQbDBZpQQUJxNDhC","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"5ksTNi67xcM6sV4qgi9E1U","name":"小红","sex":0,"is_delete":0}]
+13:11:13.630 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"GuV1MjHQbDBZpQQUJxNDhC","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"5ksTNi67xcM6sV4qgi9E1U","name":"小红","sex":0,"is_delete":0}]
+13:11:13.631 [pool-13-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"GuV1MjHQbDBZpQQUJxNDhC","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"5ksTNi67xcM6sV4qgi9E1U","name":"小红","sex":0,"is_delete":0}]
+13:11:13.637 [http-bio-8089-exec-5] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"GuV1MjHQbDBZpQQUJxNDhC","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"5ksTNi67xcM6sV4qgi9E1U","name":"小红","sex":0,"is_delete":0}]
+13:11:14.167 [http-bio-8089-exec-6] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"JAiHNQXrCyrzfQY6vftZi3","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"THCnz6bsDQV1XE5D77PUiK","name":"小红","sex":0,"is_delete":0}]
+13:11:14.180 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"JAiHNQXrCyrzfQY6vftZi3","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"THCnz6bsDQV1XE5D77PUiK","name":"小红","sex":0,"is_delete":0}]
+13:11:14.181 [pool-16-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"JAiHNQXrCyrzfQY6vftZi3","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"THCnz6bsDQV1XE5D77PUiK","name":"小红","sex":0,"is_delete":0}]
+13:11:14.186 [http-bio-8089-exec-6] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"JAiHNQXrCyrzfQY6vftZi3","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"THCnz6bsDQV1XE5D77PUiK","name":"小红","sex":0,"is_delete":0}]
+13:11:14.649 [http-bio-8089-exec-7] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"G5nr1FZacNPxq7oreCh4U7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"2z9wpPh9NGi8VCjczk6Hh4","name":"小红","sex":0,"is_delete":0}]
+13:11:14.661 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"G5nr1FZacNPxq7oreCh4U7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"2z9wpPh9NGi8VCjczk6Hh4","name":"小红","sex":0,"is_delete":0}]
+13:11:14.662 [pool-19-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"G5nr1FZacNPxq7oreCh4U7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"2z9wpPh9NGi8VCjczk6Hh4","name":"小红","sex":0,"is_delete":0}]
+13:11:14.666 [http-bio-8089-exec-7] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"G5nr1FZacNPxq7oreCh4U7","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"2z9wpPh9NGi8VCjczk6Hh4","name":"小红","sex":0,"is_delete":0}]
+13:11:15.095 [http-bio-8089-exec-8] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"DoDckhK8tfGTYznBbszyqX","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"SHFy99Eyg6wLqqgENhg3Rm","name":"小红","sex":0,"is_delete":0}]
+13:11:15.107 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"DoDckhK8tfGTYznBbszyqX","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"SHFy99Eyg6wLqqgENhg3Rm","name":"小红","sex":0,"is_delete":0}]
+13:11:15.109 [pool-22-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"DoDckhK8tfGTYznBbszyqX","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"SHFy99Eyg6wLqqgENhg3Rm","name":"小红","sex":0,"is_delete":0}]
+13:11:15.114 [http-bio-8089-exec-8] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"DoDckhK8tfGTYznBbszyqX","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"SHFy99Eyg6wLqqgENhg3Rm","name":"小红","sex":0,"is_delete":0}]
+13:11:15.535 [http-bio-8089-exec-9] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"YNok9PucQbZ9Vc114hBeds","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"7HRQcSoKJgYHEYLKiLH7pT","name":"小红","sex":0,"is_delete":0}]
+13:11:15.548 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"YNok9PucQbZ9Vc114hBeds","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"7HRQcSoKJgYHEYLKiLH7pT","name":"小红","sex":0,"is_delete":0}]
+13:11:15.550 [pool-25-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"YNok9PucQbZ9Vc114hBeds","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"7HRQcSoKJgYHEYLKiLH7pT","name":"小红","sex":0,"is_delete":0}]
+13:11:15.556 [http-bio-8089-exec-9] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"YNok9PucQbZ9Vc114hBeds","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"7HRQcSoKJgYHEYLKiLH7pT","name":"小红","sex":0,"is_delete":0}]
+13:11:16.002 [http-bio-8089-exec-10] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"PiT4LvC74NMA9WfbtAaqCx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"E8VyQBRATarH5Aosxjmb4S","name":"小红","sex":0,"is_delete":0}]
+13:11:16.015 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"PiT4LvC74NMA9WfbtAaqCx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"E8VyQBRATarH5Aosxjmb4S","name":"小红","sex":0,"is_delete":0}]
+13:11:16.016 [pool-28-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"PiT4LvC74NMA9WfbtAaqCx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"E8VyQBRATarH5Aosxjmb4S","name":"小红","sex":0,"is_delete":0}]
+13:11:16.021 [http-bio-8089-exec-10] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"PiT4LvC74NMA9WfbtAaqCx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"E8VyQBRATarH5Aosxjmb4S","name":"小红","sex":0,"is_delete":0}]
+13:11:16.488 [http-bio-8089-exec-10] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"5nQfdDz3B35EHMikgC6Y9r","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"35WoRphsTCfkwga5HRtpFM","name":"小红","sex":0,"is_delete":0}]
+13:11:16.506 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"5nQfdDz3B35EHMikgC6Y9r","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"35WoRphsTCfkwga5HRtpFM","name":"小红","sex":0,"is_delete":0}]
+13:11:16.512 [pool-31-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"5nQfdDz3B35EHMikgC6Y9r","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"35WoRphsTCfkwga5HRtpFM","name":"小红","sex":0,"is_delete":0}]
+13:11:16.522 [http-bio-8089-exec-10] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"5nQfdDz3B35EHMikgC6Y9r","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"35WoRphsTCfkwga5HRtpFM","name":"小红","sex":0,"is_delete":0}]
+13:11:16.962 [http-bio-8089-exec-10] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"BtDhoTfpMMT3B397AvQKje","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"PNm9rXLiYZkCCyqjySg6X2","name":"小红","sex":0,"is_delete":0}]
+13:11:16.971 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"BtDhoTfpMMT3B397AvQKje","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"PNm9rXLiYZkCCyqjySg6X2","name":"小红","sex":0,"is_delete":0}]
+13:11:16.973 [pool-34-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"BtDhoTfpMMT3B397AvQKje","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"PNm9rXLiYZkCCyqjySg6X2","name":"小红","sex":0,"is_delete":0}]
+13:11:16.978 [http-bio-8089-exec-10] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"BtDhoTfpMMT3B397AvQKje","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"PNm9rXLiYZkCCyqjySg6X2","name":"小红","sex":0,"is_delete":0}]
+13:17:03.616 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"U8nquCCAAzhqu5c8kKH1m1","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"YGFSe19QutZtaSB6AvDJXV","name":"小红","sex":0,"is_delete":0}]
+13:17:03.641 [pool-4-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"U8nquCCAAzhqu5c8kKH1m1","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"YGFSe19QutZtaSB6AvDJXV","name":"小红","sex":0,"is_delete":0}]
+13:17:03.654 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"U8nquCCAAzhqu5c8kKH1m1","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"YGFSe19QutZtaSB6AvDJXV","name":"小红","sex":0,"is_delete":0}]
+13:17:03.896 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"U8nquCCAAzhqu5c8kKH1m1","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"YGFSe19QutZtaSB6AvDJXV","name":"小红","sex":0,"is_delete":0}]
+15:31:13.444 [main] INFO  user.UserTest[35] - info
+15:31:13.615 [main] INFO  user.UserTest[39] - 127.0.0.1
+15:31:30.626 [main] INFO  user.UserTest[35] - info
+15:31:30.825 [main] INFO  user.UserTest[39] - 127.0.0.1
+16:18:44.191 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+16:18:44.222 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:18:44.223 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+16:18:44.226 [localhost-startStop-1] INFO  org.quartz.simpl.RAMJobStore[155] - RAMJobStore initialized.
+16:18:44.228 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:18:44.229 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+16:18:44.229 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+16:18:44.232 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4e023959
+16:18:44.254 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler scheduler_$_NON_CLUSTERED started.
+16:18:45.055 [scheduler_Worker-1] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:18:46.720 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+16:18:46.722 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:18:46.723 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+16:18:46.724 [localhost-startStop-1] INFO  org.quartz.simpl.RAMJobStore[155] - RAMJobStore initialized.
+16:18:46.724 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:18:46.724 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+16:18:46.724 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+16:18:46.725 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2f09f3f0
+16:18:46.737 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler scheduler_$_NON_CLUSTERED started.
+16:18:50.001 [scheduler_Worker-1] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:18:50.002 [scheduler_Worker-2] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:18:55.001 [scheduler_Worker-3] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:18:55.001 [scheduler_Worker-2] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:00.001 [scheduler_Worker-4] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:00.001 [scheduler_Worker-3] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:05.003 [scheduler_Worker-4] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:05.003 [scheduler_Worker-5] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:10.000 [scheduler_Worker-5] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:10.001 [scheduler_Worker-6] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:15.001 [scheduler_Worker-7] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:15.001 [scheduler_Worker-6] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:20.002 [scheduler_Worker-7] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:20.002 [scheduler_Worker-8] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:25.002 [scheduler_Worker-8] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:25.004 [scheduler_Worker-9] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:30.001 [scheduler_Worker-10] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:30.002 [scheduler_Worker-9] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:35.002 [scheduler_Worker-1] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:35.002 [scheduler_Worker-10] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:40.000 [scheduler_Worker-2] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:40.001 [scheduler_Worker-1] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:45.004 [scheduler_Worker-3] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:45.004 [scheduler_Worker-2] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:50.001 [scheduler_Worker-4] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:50.001 [scheduler_Worker-3] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:55.001 [scheduler_Worker-4] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:19:55.001 [scheduler_Worker-5] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:00.001 [scheduler_Worker-6] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:00.001 [scheduler_Worker-5] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:05.005 [scheduler_Worker-6] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:05.005 [scheduler_Worker-7] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:10.002 [scheduler_Worker-7] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:10.002 [scheduler_Worker-8] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:15.002 [scheduler_Worker-9] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:15.002 [scheduler_Worker-8] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:20.000 [scheduler_Worker-10] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:20:20.000 [scheduler_Worker-9] INFO  c.m.quartz.task.DataConversionTask[13] - 数据转换任务线程开始执行
+16:21:16.268 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+16:21:16.311 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:21:16.313 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+16:21:16.315 [localhost-startStop-1] INFO  org.quartz.simpl.RAMJobStore[155] - RAMJobStore initialized.
+16:21:16.316 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:21:16.317 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+16:21:16.317 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+16:21:16.320 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3aef9f39
+16:21:16.356 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler scheduler_$_NON_CLUSTERED started.
+16:21:18.335 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+16:21:18.339 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:21:18.340 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+16:21:18.341 [localhost-startStop-1] INFO  org.quartz.simpl.RAMJobStore[155] - RAMJobStore initialized.
+16:21:18.341 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:21:18.342 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+16:21:18.342 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+16:21:18.342 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5bb5dd9d
+16:21:18.349 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler scheduler_$_NON_CLUSTERED started.
+16:25:18.688 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+16:25:18.726 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:25:18.729 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+16:25:18.732 [localhost-startStop-1] INFO  org.quartz.simpl.RAMJobStore[155] - RAMJobStore initialized.
+16:25:18.734 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:25:18.735 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+16:25:18.735 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+16:25:18.739 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@37ef842d
+16:25:18.764 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler scheduler_$_NON_CLUSTERED started.

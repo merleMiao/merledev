@@ -1,0 +1,146 @@
+15:09:12.110 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:09:12.110 [Druid-ConnectionPool-Log-2063314787] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-2063314787","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:09:12","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:09:16.916 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:09:16.921 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:09:16.954 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:09:16.954 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:09:17.007 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465369756920'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:09:17.008 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:09:17.008 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:09:17.010 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@39f3e7bb
+15:09:17.212 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465369756920 started.
+15:11:29.190 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:11:29.190 [Druid-ConnectionPool-Log-302505160] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-302505160","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:11:29","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:11:32.901 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:11:32.906 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:11:32.937 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:11:32.938 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:11:32.976 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465369892905'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:11:32.976 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:11:32.976 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:11:32.980 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2fad6aa1
+15:11:33.246 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465369892905 started.
+15:11:34.977 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"VR4aCndGPNmryPaX6gUoqg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"EcVvukxpsqTumAmp5sqehe","name":"小红","sex":0,"is_delete":0}]
+15:11:34.993 [pool-4-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"VR4aCndGPNmryPaX6gUoqg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"EcVvukxpsqTumAmp5sqehe","name":"小红","sex":0,"is_delete":0}]
+15:11:35.007 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"VR4aCndGPNmryPaX6gUoqg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"EcVvukxpsqTumAmp5sqehe","name":"小红","sex":0,"is_delete":0}]
+15:11:35.096 [Thread-6] INFO  com.miao.user.handler.TestHandler[28] - message:[{"id":0,"mobile":null,"email":null,"uuid":"VR4aCndGPNmryPaX6gUoqg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"EcVvukxpsqTumAmp5sqehe","name":"小红","sex":0,"is_delete":0}]
+15:11:35.098 [Thread-6] INFO  com.miao.user.handler.TestHandler[29] - message:user:{"id":1000,"mobile":null,"email":"","uuid":"1","name":"小明","sex":0,"is_delete":0}
+15:11:35.098 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"VR4aCndGPNmryPaX6gUoqg","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"EcVvukxpsqTumAmp5sqehe","name":"小红","sex":0,"is_delete":0}]
+15:13:35.633 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:13:35.634 [Druid-ConnectionPool-Log-1461245224] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1461245224","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:13:35","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:13:38.997 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:13:39.001 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:13:39.019 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:13:39.020 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:13:39.048 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465370019000'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:13:39.049 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:13:39.049 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:13:39.052 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4ad52b58
+15:13:39.294 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465370019000 started.
+15:15:00.195 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:15:00.195 [Druid-ConnectionPool-Log-1789869779] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1789869779","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:15:00","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:15:03.443 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:15:03.447 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:15:03.466 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:15:03.466 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:15:03.492 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465370103446'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:15:03.493 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:15:03.493 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:15:03.495 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@62d484d8
+15:15:03.673 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465370103446 started.
+15:20:00.202 [Druid-ConnectionPool-Log-1789869779] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1789869779","activeCount":0,"activePeak":2,"activePeakTime":"2016-06-08 15:18:03","poolingCount":2,"poolingPeak":2,"poolingPeakTime":"2016-06-08 15:15:03","connectCount":33,"closeCount":33,"notEmptyWaitCount":1,"notEmptyWaitMillis":7,"physicalConnectCount":1,"executeCount":54,"commitCount":46,"pstmtCacheHitCount":40,"pstmtCacheMissCount":14,"startTransactionCount":32,"transactionHistogram":[0,16,11,5],"connectionHoldTimeHistogram":[]}
+15:25:00.203 [Druid-ConnectionPool-Log-1789869779] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1789869779","activeCount":0,"activePeak":2,"activePeakTime":"2016-06-08 15:20:03","poolingCount":2,"poolingPeak":2,"poolingPeakTime":"2016-06-08 15:20:03","connectCount":31,"closeCount":31,"executeCount":46,"commitCount":46,"pstmtCacheHitCount":46,"startTransactionCount":31,"transactionHistogram":[1,15,14,1],"connectionHoldTimeHistogram":[]}
+15:30:00.204 [Druid-ConnectionPool-Log-1789869779] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1789869779","activeCount":0,"activePeak":2,"activePeakTime":"2016-06-08 15:25:03","poolingCount":2,"poolingPeak":2,"poolingPeakTime":"2016-06-08 15:25:03","connectCount":31,"closeCount":31,"executeCount":46,"commitCount":46,"pstmtCacheHitCount":46,"startTransactionCount":31,"transactionHistogram":[1,15,10,5],"connectionHoldTimeHistogram":[]}
+15:34:22.681 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:34:22.681 [Druid-ConnectionPool-Log-1922454448] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1922454448","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:34:22","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:34:26.983 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:34:26.986 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:34:27.012 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:34:27.012 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:34:27.038 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465371266985'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:34:27.039 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:34:27.039 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:34:27.042 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@75a86fa1
+15:34:27.222 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465371266985 started.
+15:34:43.487 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"3f3qkBvzBoEudGYecXJbEk","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3TsCHyRJtY7i1E1rTqQP5x","name":"小红","sex":0,"is_delete":0}]
+15:34:43.508 [pool-4-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"3f3qkBvzBoEudGYecXJbEk","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3TsCHyRJtY7i1E1rTqQP5x","name":"小红","sex":0,"is_delete":0}]
+15:34:43.516 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"3f3qkBvzBoEudGYecXJbEk","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3TsCHyRJtY7i1E1rTqQP5x","name":"小红","sex":0,"is_delete":0}]
+15:34:43.524 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"3f3qkBvzBoEudGYecXJbEk","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3TsCHyRJtY7i1E1rTqQP5x","name":"小红","sex":0,"is_delete":0}]
+15:34:43.525 [http-bio-8089-exec-1] INFO  com.miao.aop.ControllerAspect[22] - 	ControllerAspect	com.miao.user.controller.UserController.list	1837
+15:35:56.571 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:35:56.571 [Druid-ConnectionPool-Log-1708689240] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1708689240","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:35:56","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:36:00.402 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:36:00.406 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:36:00.424 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:36:00.424 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:36:00.454 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465371360405'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:36:00.454 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:36:00.454 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:36:00.456 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7abad113
+15:36:00.666 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465371360405 started.
+15:36:38.232 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[151] - rmq_send_message:start	[{"id":0,"mobile":null,"email":null,"uuid":"B1SMKcKLQURBWxKkA8eWcx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3DuomcXs6gLu8neKxFJihf","name":"小红","sex":0,"is_delete":0}]
+15:36:38.251 [pool-4-thread-1] INFO  com.merle.rmq.SubscriberUtils[170] - rmq_send_message:	true	[{"id":0,"mobile":null,"email":null,"uuid":"B1SMKcKLQURBWxKkA8eWcx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3DuomcXs6gLu8neKxFJihf","name":"小红","sex":0,"is_delete":0}]
+15:36:38.257 [Thread-6] INFO  com.merle.rmq.SubscriberUtils[82] - false	[{"id":0,"mobile":null,"email":null,"uuid":"B1SMKcKLQURBWxKkA8eWcx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3DuomcXs6gLu8neKxFJihf","name":"小红","sex":0,"is_delete":0}]
+15:36:38.263 [http-bio-8089-exec-1] INFO  com.merle.rmq.SubscriberUtils[188] - rmq_send_message:all	true	[{"id":0,"mobile":null,"email":null,"uuid":"B1SMKcKLQURBWxKkA8eWcx","name":"小明","sex":0,"is_delete":0},{"id":0,"mobile":null,"email":null,"uuid":"3DuomcXs6gLu8neKxFJihf","name":"小红","sex":0,"is_delete":0}]
+15:36:38.266 [http-bio-8089-exec-1] INFO  com.miao.aop.ControllerAspect[22] - 	ControllerAspect	com.miao.user.controller.UserController.list	30807
+15:38:59.131 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+15:38:59.132 [Druid-ConnectionPool-Log-709450716] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-709450716","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-08 15:38:59","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+15:39:02.719 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+15:39:02.724 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+15:39:02.749 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:39:02.749 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+15:39:02.778 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1465371542723'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:39:02.779 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+15:39:02.779 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+15:39:02.781 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@729c9326
+15:39:03.054 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1465371542723 started.
+15:43:59.141 [Druid-ConnectionPool-Log-709450716] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-709450716","activeCount":0,"activePeak":1,"activePeakTime":"2016-06-08 15:39:02","poolingCount":2,"poolingPeak":2,"poolingPeakTime":"2016-06-08 15:39:03","connectCount":33,"closeCount":33,"notEmptyWaitCount":1,"notEmptyWaitMillis":7,"physicalConnectCount":1,"executeCount":54,"commitCount":46,"pstmtCacheHitCount":40,"pstmtCacheMissCount":14,"startTransactionCount":32,"transactionHistogram":[0,17,10,5],"connectionHoldTimeHistogram":[]}

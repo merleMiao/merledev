@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!--属性区-->
+	<property name="logBase" value="../logs/" />
+
+
+    <!--console输出-->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{26}[%L] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+    <!--info 文件输出-->
+	<appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 按日期区分的滚动日志 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logBase}/info.%d{yyyy-MM-dd}.gz</fileNamePattern>
+			<maxHistory>3</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%L] - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+    <!--error 文件输出-->
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 按日期区分的滚动日志 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logBase}/error.%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%L] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+
+    <!--针对 INFO 级别的日志进行过滤,并输出到 info 文件中-->
+    <appender name="async-info" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="info" />
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--针对 ERROR 级别的日志进行过滤,并输出到 error 文件中-->
+    <appender name="async-error" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="error"/>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--针对 WARN 级别的日志进行过滤,并输出到 error 文件中-->
+    <appender name="async-warn" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="error"/>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+    <!--针对不同的包设置不同的级别-->
+    <logger name="org.apache" level="INFO" />
+    <logger name="org.springframework" level="WARN" />
+
+
+	<!--总的配置,默认将级别设定在info-->
+	<root level="INFO">
+		<appender-ref ref="stdout" />
+        <appender-ref ref="async-info"/>
+        <appender-ref ref="async-warn"/>
+        <appender-ref ref="async-error"/>
+	</root>
+
+
+    <appender name="monitor" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>ACCEPT</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}[%L] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logBase}/monitor.%d{yyyy-MM-dd}.gz</fileNamePattern>
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <logger name="monitor" additivity="false" level="INFO">
+        <appender-ref ref="monitor" />
+    </logger>
+
+</configuration>

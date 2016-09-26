@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="mysql.properties"/>
+    <typeAliases>
+        <typeAlias type="com.miao.quartz.utils.DruidToMybetisProxy" alias="DRUID"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="jdbc"/>
+            <dataSource type="DRUID">
+                <property name="driverClassName" value="${driverClassName}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="removeAbandoned" value="true"/>
+                <property name="poolPreparedStatements" value="true"/>
+                <property name="validationQuery" value="select 1"/>
+                <property name="filters" value="stat"/>
+            </dataSource>
+        </environment>
+    </environments>
+</configuration>

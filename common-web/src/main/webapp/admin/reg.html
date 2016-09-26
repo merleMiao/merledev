@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/function.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../lib/validator-0.7.3/jquery.validator.css"/>
+    <script type="text/javascript" src="../lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../lib/validator-0.7.3/jquery.validator.js"></script>
+    <script type="text/javascript" src="../lib/validator-0.7.3/local/zh_CN.js"></script>
+    <style type="text/css">
+        html,body{
+            background-color: #d7cdff;
+            height: 100%;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        #reg-form{
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 3em;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 0 2px rgba(0,0,0,.2);
+            margin-top: 100px;
+        }
+        .text-area{
+            width: 300px;
+            margin : 0 auto;
+        }
+        .text-area .input{
+            margin-top: 10px;
+        }
+        .text-area .action{
+            margin-top: 20px;
+        }
+        .lab_text{
+            float: left;
+            width: 90px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="reg-form">
+        <h1 align="center">
+            用户注册
+        </h1>
+        <div class="text-area">
+            <div class="text-area input">
+                <label class="lab_text">用户名:</label><input id="username" placeholder="用户名" data-rule="用户名:required;username">
+            </div>
+            <div class="text-area input">
+                <label class="lab_text">Email:</label><input id="email" placeholder="邮箱" data-rule="邮箱:required;email">
+            </div>
+            <div class="text-area input">
+                <label class="lab_text">密码:</label><input id="password" type="password" placeholder="密码" data-rule="密码:required;password">
+            </div>
+            <div class="text-area input">
+                <label class="lab_text">确认密码:</label><input id="confirmPassword" type="password" placeholder="再次确认" data-rule="再次确认:required;password">
+            </div>
+            <div class="text-area action">
+                <button id="submit">提交</button>
+                <button id="clear">重置</button>
+            </div>
+        </div>
+
+    </form>
+    <div id="modalTime"></div>
+
+    <script>
+        var debug = true;
+        var init = {
+            validateResult:false,
+            setEvent:function(){
+                var me = this;
+                me.handle();
+            },
+            handle:function(){
+                var me = this;
+                $("#submit").unbind().bind("click", function(){
+                    me.validatePassword();
+                    console.log(me.validateResult);
+                    if(me.validateResult){
+                        me.userReg();
+                    }else{
+                        modelChange("两次密码输入不一致,请确认后输入")
+                    }
+                    return false;
+                });
+                $("#clear").unbind().bind("click", function(){
+                    $('input').val('');
+                    return false;
+                });
+            },
+            userReg:function(){
+                var me = this;
+                var username = $('#username').val();
+                var password = $('#password').val();
+                var email = $('#email').val();
+                var url = '/common-web/api/user.json';
+                var param = {
+                    email:email,
+                    name:username,
+                    password:password
+                };
+                httpAgent(url, "post", param, function(data){
+                    if(data.result == 0){
+                        window.location.href='/common-web/admin/login.html?id=' + data.user.id;
+                    }else{
+                        modelChange(data.msg);
+                    }
+                });
+                return false;
+            },
+            validatePassword:function(){
+                var me = this;
+                var password = $('#password').val();
+                var confirmPassword =  $('#confirmPassword').val();
+                if(password != '' && confirmPassword != '' && password == confirmPassword){
+                    me.validateResult = true;
+                }else{
+                    me.validateResult = false;
+                }
+            }
+        }
+        init.setEvent();
+        function modelChange(con) {
+            $("#modalTime").show().html(con);
+            var w = $("#modalTime").width();
+            var h = $("#modalTime").height();
+            $("#modalTime").css({
+                "margin-left": -w / 2,
+                "margin-top": -h / 2
+            });
+            $("#modalTime").fadeOut(3000, function() {});
+        };
+    </script>
+</body>
+</html>

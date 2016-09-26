@@ -1,0 +1,40 @@
+20:22:59.146 [Druid-ConnectionPool-Log-1108812168] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1108812168","activeCount":0,"poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-16 20:22:59","connectCount":0,"closeCount":0,"physicalConnectCount":1}
+20:22:59.130 [localhost-startStop-1] INFO  c.alibaba.druid.pool.DruidDataSource[669] - {dataSource-1} inited
+20:23:19.141 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+20:23:19.149 [localhost-startStop-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: localhost-startStop-1
+20:23:19.201 [localhost-startStop-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20:23:19.203 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+20:23:19.281 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1466079799147'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+20:23:19.281 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from an externally provided properties instance.
+20:23:19.281 [localhost-startStop-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+20:23:19.291 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[2311] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@ae747d3
+20:23:19.526 [localhost-startStop-1] INFO  org.quartz.core.QuartzScheduler[575] - Scheduler myScheduler_$_miao1466079799147 started.
+20:24:03.809 [http-bio-8089-exec-1] INFO  org.quartz.impl.StdSchedulerFactory[1184] - Using default implementation for ThreadExecutor
+20:24:03.811 [http-bio-8089-exec-1] INFO  org.quartz.simpl.SimpleThreadPool[268] - Job execution threads will use class loader of thread: http-bio-8089-exec-1
+20:24:03.814 [http-bio-8089-exec-1] INFO  o.quartz.core.SchedulerSignalerImpl[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20:24:03.831 [http-bio-8089-exec-1] INFO  org.quartz.core.QuartzScheduler[240] - Quartz Scheduler v.2.2.1 created.
+20:24:03.832 [http-bio-8089-exec-1] INFO  o.q.impl.jdbcjobstore.JobStoreTX[667] - Using db table-based data access locking (synchronization).
+20:24:03.832 [http-bio-8089-exec-1] INFO  o.q.impl.jdbcjobstore.JobStoreTX[59] - JobStoreTX initialized.
+20:24:03.833 [http-bio-8089-exec-1] INFO  org.quartz.core.QuartzScheduler[305] - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'myScheduler' with instanceId 'miao1466079843811'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.quartz.impl.jdbcjobstore.JobStoreTX' - which supports persistence. and is clustered.
+
+20:24:03.834 [http-bio-8089-exec-1] INFO  org.quartz.impl.StdSchedulerFactory[1339] - Quartz scheduler 'myScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+20:24:03.834 [http-bio-8089-exec-1] INFO  org.quartz.impl.StdSchedulerFactory[1343] - Quartz scheduler version: 2.2.1
+20:25:19.902 [myScheduler_Worker-1] INFO  c.miao.quartz.job.CallbackServiceJob[23] - callback.jobDate:{"method":"post","url":"http://www.baidu.com"}
+20:27:59.177 [Druid-ConnectionPool-Log-1108812168] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1108812168","activeCount":0,"activePeak":2,"activePeakTime":"2016-06-16 20:23:19","poolingCount":2,"poolingPeak":2,"poolingPeakTime":"2016-06-16 20:23:19","connectCount":36,"closeCount":36,"notEmptyWaitCount":1,"notEmptyWaitMillis":14,"physicalConnectCount":1,"executeCount":89,"commitCount":48,"pstmtCacheHitCount":55,"pstmtCacheMissCount":34,"startTransactionCount":35,"transactionHistogram":[0,15,7,13],"connectionHoldTimeHistogram":[]}
+20:32:59.182 [Druid-ConnectionPool-Log-1108812168] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1108812168","activeCount":0,"activePeak":2,"activePeakTime":"2016-06-16 20:28:19","poolingCount":2,"poolingPeak":2,"poolingPeakTime":"2016-06-16 20:27:59","connectCount":31,"closeCount":31,"executeCount":46,"commitCount":46,"pstmtCacheHitCount":46,"startTransactionCount":31,"transactionHistogram":[0,16,10,5],"connectionHoldTimeHistogram":[]}
+20:37:59.184 [Druid-ConnectionPool-Log-1108812168] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1108812168","activeCount":0,"activePeak":1,"activePeakTime":"2016-06-16 20:32:59","poolingCount":1,"poolingPeak":2,"poolingPeakTime":"2016-06-16 20:32:59","connectCount":32,"closeCount":32,"physicalCloseCount":1,"executeCount":47,"commitCount":47,"pstmtCacheHitCount":47,"startTransactionCount":32,"transactionHistogram":[0,16,9,7],"connectionHoldTimeHistogram":[]}
+20:42:59.185 [Druid-ConnectionPool-Log-1108812168] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1108812168","activeCount":0,"activePeak":1,"activePeakTime":"2016-06-16 20:37:59","poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-16 20:38:00","connectCount":31,"closeCount":31,"executeCount":46,"commitCount":46,"pstmtCacheHitCount":46,"startTransactionCount":31,"transactionHistogram":[2,14,13,2],"connectionHoldTimeHistogram":[]}
+20:47:59.185 [Druid-ConnectionPool-Log-1108812168] INFO  c.a.d.p.DruidDataSourceStatLoggerImpl[77] - {"url":"jdbc:mysql://localhost:3306/merle_test?useUnicode=true&noAccessToProcedureBodies=true","dbType":"mysql","name":"DataSource-1108812168","activeCount":0,"activePeak":1,"activePeakTime":"2016-06-16 20:42:59","poolingCount":1,"poolingPeak":1,"poolingPeakTime":"2016-06-16 20:42:59","connectCount":31,"closeCount":31,"executeCount":46,"commitCount":46,"pstmtCacheHitCount":46,"startTransactionCount":31,"transactionHistogram":[0,16,11,4],"connectionHoldTimeHistogram":[]}

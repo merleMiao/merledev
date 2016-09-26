@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<global>
+    <rabbitmq>
+        <host>127.0.0.1</host>
+    </rabbitmq>
+    <db>
+        <prop>mysql.properties</prop>
+        <mybatis>quartzSqlSession.xml</mybatis>
+    </db>
+
+    <mongo>
+        <host>127.0.0.1</host>
+        <port>27017</port>
+        <poolSize>150</poolSize>
+        <blockSize>150</blockSize>
+    </mongo>
+</global>

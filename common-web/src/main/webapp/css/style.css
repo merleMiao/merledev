@@ -1,0 +1,13 @@
+#modalTime {
+    z-index: 15000;
+    padding: 15px 30px;
+    background: #ffffc1;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: none;
+}
