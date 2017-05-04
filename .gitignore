@@ -5,3 +5,4 @@
 /common-mongo/*.iml
 .git
 /.idea
+/logs

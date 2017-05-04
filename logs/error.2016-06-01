@@ -1,6 +1,0 @@
-13:00:17.066 [main] WARN  user.UserTest[35] - warn
-13:00:17.066 [main] ERROR user.UserTest[36] - error
-15:31:13.451 [main] WARN  user.UserTest[37] - warn
-15:31:13.451 [main] ERROR user.UserTest[38] - error
-15:31:30.635 [main] WARN  user.UserTest[37] - warn
-15:31:30.636 [main] ERROR user.UserTest[38] - error
