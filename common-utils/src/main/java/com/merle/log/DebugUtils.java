@@ -94,7 +94,7 @@ public class DebugUtils {
         }
         times++;
         long curr = System.currentTimeMillis();
-        String msg = currStr + "位置：" + times + "\t" + this.clazzName + "\t"
+        String msg = currStr + "次数：" + times + "\t" + "位置:"+this.clazzName + "\t"
                 + "总计：" + (curr - start) + "ms\t" + identify
                 + "花费：" + (curr - pre) + "ms";
 
