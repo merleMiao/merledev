@@ -17,6 +17,7 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.1" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient-cache:4.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient-win:4.5.1" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jna:jna:4.1.0" level="project" />
@@ -30,20 +31,19 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.1.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:4.1.6.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.jr:jackson-jr-all:2.4.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.3" level="project" />
@@ -88,11 +88,11 @@
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queries:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-memory:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-highlighter:5.5.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-join:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queryparser:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-sandbox:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-suggest:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-misc:5.5.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-join:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-grouping:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spatial:5.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-spatial3d:5.5.0" level="project" />
