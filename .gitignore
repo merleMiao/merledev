@@ -6,3 +6,8 @@
 .git
 /.idea
 /logs
+/common-web/*.iml
+/common-utils/*.iml
+/common-user/*.iml
+/common-search/*.iml
+/common-quartz/*.iml
