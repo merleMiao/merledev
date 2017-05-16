@@ -75,10 +75,10 @@ public class DebugUtils {
         }
         times++;
         long curr = System.currentTimeMillis();
-        String msg = currStr + "位置：" + times + "\t" + this.clazzName + "\t"
-                + "费时：" + (curr - start) + "ms\t" + (curr - pre) + "ms";
+//        String msg = currStr + "位置：" + times + "\t" + this.clazzName + "\t"
+//                + "费时：" + (curr - start) + "ms\t" + (curr - pre) + "ms";
         //
-        logger.info(msg);
+//        logger.info(msg);
         this.pre = curr;
     }
 
@@ -94,11 +94,11 @@ public class DebugUtils {
         }
         times++;
         long curr = System.currentTimeMillis();
-        String msg = currStr + "次数：" + times + "\t" + "位置:"+this.clazzName + "\t"
-                + "总计：" + (curr - start) + "ms\t" + identify
-                + "花费：" + (curr - pre) + "ms";
+//        String msg = currStr + "次数：" + times + "\t" + "位置:"+this.clazzName + "\t"
+//                + "总计：" + (curr - start) + "ms\t" + identify
+//                + "花费：" + (curr - pre) + "ms";
 
-        logger.info(msg);
+//        logger.info(msg);
         this.pre = curr;
     }
 
